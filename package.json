@@ -11,13 +11,14 @@
   "author": "A. Hassan (https://hassan.web.id)",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.22.0",
+    "@types/node": "^18.7.16",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
-    "tsx": "^3.8.2",
-    "typescript": "^4.7.4"
+    "tsx": "^3.9.0",
+    "typescript": "^4.8.3"
   }
 }
