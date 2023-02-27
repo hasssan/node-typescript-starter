@@ -11,7 +11,7 @@
   "author": "A. Hassan (https://hassan.web.id)",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.7.16",
+    "@types/node": "^18.14.2",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
