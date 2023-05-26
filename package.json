@@ -6,10 +6,12 @@
     "clean": "rm -rf node_modules && rm -rf dist",
     "dev": "TZ=UTC nodemon --exec \"tsx ./src/index.ts\" -e ts",
     "format": "prettier --write src",
-    "start": "TZ=UTC tsx ./src/index.ts"
+    "start": "TZ=UTC tsx ./src/index.ts",
+    "test": "vitest"
   },
   "author": "A. Hassan (https://hassan.web.id)",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^20.2.3",
     "@typescript-eslint/eslint-plugin": "^5.59.6",
@@ -19,6 +21,7 @@
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "tsx": "^3.12.7",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1"
   }
 }
