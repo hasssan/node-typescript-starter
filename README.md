@@ -1,5 +1,9 @@
 # Node Typescript Starter
 
+## Notice
+- This template is using UTC Timezone as default.
+    If you don't like this then remove `TZ=UTC` from `package.json`'s `scripts`
+
 ## Development
 ```
 npm run dev
