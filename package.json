@@ -4,9 +4,9 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf node_modules && rm -rf dist",
-    "dev": "nodemon --exec \"tsx ./src/index.ts\" -e ts",
+    "dev": "TZ=UTC nodemon --exec \"tsx ./src/index.ts\" -e ts",
     "format": "prettier --write src",
-    "start": "tsx ./src/index.ts"
+    "start": "TZ=UTC tsx ./src/index.ts"
   },
   "author": "A. Hassan (https://hassan.web.id)",
   "license": "MIT",
