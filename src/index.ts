@@ -1,7 +1,6 @@
-type Example = boolean;
-
-const isExample: Example = true;
-
-if (isExample) {
-  console.log("is this example:", isExample);
+export function redundantIsoString(date: Date) {
+    return date.toISOString();
 }
+
+console.log(redundantIsoString(new Date()));
+
