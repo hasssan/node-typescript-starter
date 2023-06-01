@@ -2,11 +2,9 @@
   "name": "node-typescript-starter",
   "version": "0.1.0",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf node_modules && rm -rf dist",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
     "dev": "TZ=UTC nodemon --exec \"tsx ./src/index.ts\" -e ts",
-    "format": "prettier --write src",
-    "start": "TZ=UTC tsx ./src/index.ts",
+    "start": "npm run build && TZ=UTC node ./dist/index.js",
     "test": "vitest",
     "prepare": "husky install"
   },
@@ -23,6 +21,7 @@
     "lint-staged": "^13.2.2",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
