@@ -17,6 +17,12 @@ npm run dev
 npm run build
 ```
 
+## Start
+
+```sh
+npm run start
+```
+
 ## Other commands
 
 See `package.json`
