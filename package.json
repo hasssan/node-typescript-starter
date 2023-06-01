@@ -7,7 +7,8 @@
     "dev": "TZ=UTC nodemon --exec \"tsx ./src/index.ts\" -e ts",
     "format": "prettier --write src",
     "start": "TZ=UTC tsx ./src/index.ts",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "author": "A. Hassan (https://hassan.web.id)",
   "license": "MIT",
@@ -18,10 +19,19 @@
     "@typescript-eslint/parser": "^5.59.8",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.md": "prettier --write"
   }
 }
