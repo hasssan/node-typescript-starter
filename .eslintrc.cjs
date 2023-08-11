@@ -9,7 +9,7 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   parserOptions: {
     sourceType: "module",
-    ecmaVersion: 2021,
+    ecmaVersion: 2022,
   },
   env: {
     node: true,
