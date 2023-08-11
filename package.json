@@ -6,7 +6,9 @@
     "dev": "TZ=UTC nodemon --exec \"tsx ./src/index.ts\" -e ts",
     "start": "npm run build && TZ=UTC node ./dist/index.js",
     "test": "vitest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "author": "A. Hassan (https://hassan.web.id)",
   "license": "MIT",
@@ -28,6 +30,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
       "eslint --fix",
       "prettier --write"
     ],
