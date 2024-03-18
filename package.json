@@ -6,7 +6,7 @@
     "dev": "TZ=UTC nodemon --exec \"tsx ./src/index.ts\" -e ts",
     "start": "npm run build && TZ=UTC node ./dist/index.js",
     "test": "vitest",
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint": "eslint . --fix",
     "format": "prettier --write ."
   },
